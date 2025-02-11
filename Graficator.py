@@ -44,7 +44,7 @@ df = pd.DataFrame(columns=tageo if tageo else valores)
 
 df_filtrado = df[tageo]
 
-start_button = st.button("Iniciar Lectura")
+start_button = st.button("Iniciar Lectura.")
 
 dt = .25 #diferencia de tiempo entre cada lectura, usasdo para calcular la velocidad
 velocidad = 0.0
@@ -52,6 +52,7 @@ velocidadx = 0.0
 # Función para procesar una línea de datos del puerto serial
 
 def procesar_linea_serial(linea):
+    
     try:
         parts = linea.split('|')
         if len(parts) >= num_valores:  # Asegúrate de que haya suficientes datos
