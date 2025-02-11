@@ -1,0 +1,84 @@
+Los datos que ustedes recibirán:  cd streamlit; streamlit run yo2.py
+BME280: 25.3, 60, 1013.25
+cd streamlit; streamlit run yo3.py
+cd streamlit; streamlit run yo4.py
+cd streamlit; streamlit run yo4.5.py
+
+cd streamlit; streamlit run yo5.py
+cd streamlit; streamlit run yo6.py
+
+    ascensotiempo.metric("Altitud aproximada", f"{altitud:.2f}")
+
+
+GPS_NEO6: 34.052235, -118.243683, 305.0
+
+FC51: 1
+
+GY302: 1200lx|
+MPU9250: 0.12, -0.05, 9.81, 0.02, 0.01, -0.03, 30.0, 45.0, 60.0
+
+T1592: 75.0
+|
+
+
+def nivelagua(df):
+    fig8 = px.line(
+        df, y = ["AGUA"], x="ALT", range_y= [-10,100], title="Nivel del agua"
+    )
+    aguatabla.plotly_chart(fig8, use_container_width=True)
+def nivelluz(df):
+    fig6 = px.line(
+        df, y = ["LUZ"], x="ALT", range_y= [-10,100], title="Nivel de luz"
+    )
+    luztabla.plotly_chart(fig6, use_container_width=True)   
+    
+def niveletapa(df):
+    fig8 = px.line(
+        df, y = ["ETAPA"], x="ALT", range_y= [-10,100], title="Nivel de etapa"
+    )
+    etapatabla.plotly_chart(fig8, use_container_width=True)
+
+    
+                    niveletapa(df)
+                    nivelluz(df)
+                    nivelagua(df)
+
+
+———————————-
+Detalles de los datos:
+
+BME280 (Temperatura, Humedad, Presión ATM):
+
+Ejemplo: BME280: 25.3, 60, 1013.25
+Temperatura: 25.3 °C
+Humedad: 60 %
+Presión: 1013.25 hPa
+
+GPS NEO6 (Latitud, Longitud, Altura):
+
+Ejemplo: GPS_NEO6: 34.052235, -118.243683, 305.0
+Latitud: 34.052235
+Longitud: -118.243683
+Altura: 305.0 m
+
+FC51 (Detección de etapa):
+Formato: FC51: <Estado>
+Ejemplo: FC51: 1
+Estado: 1 (detección) o 0 (sin detección)
+
+GY302 (Intensidad lumínica):
+Formato: GY302: <Intensidad>
+Ejemplo: GY302: 1200
+Intensidad: 1200 lx (lux)
+
+MPU9250 (Aceleración en 3 ejes, Giroscopio en 3 ejes, Magnetómetro en 3 ejes):
+Formato: MPU9250: <AccX>, <AccY>, <AccZ>, <GyroX>, <GyroY>, <GyroZ>, <MagX>, <MagY>, <MagZ>
+Ejemplo: MPU9250: 0.12, -0.05, 9.81, 0.02, 0.01, -0.03, 30.0, 45.0, 60.0
+Aceleración: 0.12, -0.05, 9.81 m/s²
+Giroscopio: 0.02, 0.01, -0.03 °/s
+Magnetómetro: 30.0, 45.0, 60.0 µT
+
+T1592 (Nivel de agua):
+Formato: T1592: <Nivel>
+Ejemplo: T1592: 75.0
+Nivel: 75.0 %

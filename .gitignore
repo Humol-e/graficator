@@ -1,0 +1,12 @@
+# Ignorar el archivo de secretos
+.streamlit/secrets.toml
+hola.py
+graficatordemo.py
+excelldemo.py
+scipt.py
+
+# Ignorar archivos de entorno
+*.env
+*.env.*
+# Ignorar carpetas innecesarias
+__pycache__/

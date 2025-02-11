@@ -1,0 +1,23 @@
+//Serial.print("BME280: 25.3| 60| 1013.25 | GPS_NEO6: 25.79302, |-108.99808,| 305.0 |FC51: 1 |GY302: 1200 lx| T1592: 75.0 |MPU9250: 0.12,| -0.05, |9.81, |0.02, |0.01,| -0.03,| 30.0,| 45.0,| 60.0 ");
+
+    fig3 = go.Figure()
+
+    fig3.add_trace(go.Scatter(x=df["TIME"], y=df["MPUY"],
+                              name="Aceleración Vertical",
+                              line=dict(color="#ffff52")))
+
+    fig3.add_trace(go.Scatter(x=df["TIME"], y=df["ALT"], 
+                              name="Altitud",
+                              line=dict(color="#0000e6"),
+                              yaxis="y2"))
+
+    fig3.update_layout(
+        title="Comparar aceleración vertical y tiempo respecto a Altitud",
+        xaxis_title="Altitud",
+        yaxis=dict(title="Aceleración"),
+        yaxis2=dict(title="Tiempo", overlaying="y", side="right"),
+        legend=dict(x=0.1, y=1.1)
+    )
+
+    # Mostrar la gráfica en Streamlit
+    ascensotabla.plotly_chart(fig3, use_container_width=False)
