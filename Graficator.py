@@ -8,8 +8,6 @@ import serial
 import serial.tools.list_ports
 import time
 import plotly.express as px
-from skimage import io
-import toml
 from st_paywall import add_auth
 from toml.decoder import TomlDecodeError
 
