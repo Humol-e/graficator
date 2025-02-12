@@ -6,8 +6,7 @@ Herramienta para la graficación de datos en tiempo real de manera inalámbrica 
 
 Utiliza una frecuencia de 19200 bauds.
 
-Importación de Librerías:
-
+ALGORITMO 
 Se importan varias librerías necesarias para la visualización de datos, manejo de datos, comunicación serial y configuración de la aplicación Streamlit.
 Configuración Inicial de Streamlit:
 
