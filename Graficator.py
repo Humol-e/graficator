@@ -14,7 +14,8 @@ from toml.decoder import TomlDecodeError
 st.set_page_config(layout='wide', initial_sidebar_state='expanded')
 st.title("Visualización de datos.")
 st.sidebar.header('Zona analítica `v1.0`')
-st.sidebar.image("https://cdn.pixabay.com/photo/2019/08/06/22/48/artificial-intelligence-4389372_1280.jpg", use_column_width=True)
+st.sidebar.markdown('`demo`')
+st.sidebar.image("https://cdn.pixabay.com/photo/2019/08/06/22/48/artificial-intelligence-4389372_1280.jpg")
 colu1, colu2 = st.columns(2)
 tageo = st.empty()
 @st.cache_resource 
