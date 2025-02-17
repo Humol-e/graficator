@@ -1,4 +1,4 @@
-### Creado por Emiliano Castro @humole.jpg
+# Creado por Emiliano Castro @humole.jpg
 
 Herramienta para la graficación de datos en tiempo real de manera inalámbrica desde distintos sensores con microcontroladores mediante la lectura serial de datos.
 
@@ -13,7 +13,7 @@ Utiliza una frecuencia de 19200 bauds.
 ```
 
 
-# ALGORITMO 
+### ALGORITMO 
 Se importan varias librerías necesarias para la visualización de datos, manejo de datos, comunicación serial y configuración de la aplicación Streamlit.
 Configuración Inicial de Streamlit:
 
