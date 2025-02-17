@@ -4,7 +4,8 @@ Herramienta para la graficación de datos en tiempo real de manera inalámbrica 
 
 Utiliza una frecuencia de 19200 bauds.
 
-#### Instalar
+#### INSTALAR
+
 ```bash
  git clone https://github.com/Humol-e/graficator.git
 ```
