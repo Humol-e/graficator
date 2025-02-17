@@ -4,13 +4,17 @@ Herramienta para la graficación de datos en tiempo real de manera inalámbrica 
 
 Utiliza una frecuencia de 19200 bauds.
 
-#### INSTALAR
+### INSTALAR
 
 ```bash
  git clone https://github.com/Humol-e/graficator.git
 ```
 ```bash
  streamlit run graficator.py
+```
+#### Data string example
+```bash
+ 13:19:03.490 ->  29.57| 49.08| 30.68 | 25.79 |-109.00 |23.30 | 0 | 162 |  -0.35 | 32.52 |17.21 |-4.88 |-28.99 |90.31 |-11.43 |-33.10 |90.79 |-14.94 |959
 ```
 
 
