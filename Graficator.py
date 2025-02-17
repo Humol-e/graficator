@@ -12,7 +12,7 @@ from st_paywall import add_auth
 from toml.decoder import TomlDecodeError
 
 st.set_page_config(layout='wide', initial_sidebar_state='expanded')
-st.title("Visualización de datos.")
+st.title("Visualización de datos.")     
 st.sidebar.header('Zona analítica `v1.0`')
 st.sidebar.markdown('`demo`')
 st.sidebar.image("https://cdn.pixabay.com/photo/2019/08/06/22/48/artificial-intelligence-4389372_1280.jpg")
@@ -49,7 +49,7 @@ dt = .25 #diferencia de tiempo entre cada lectura, usasdo para calcular la veloc
 velocidad = 0.0
 velocidadx = 0.0
 # Función para procesar una línea de datos del puerto serial
-
+st.sidebar.link_button("Documentación", "https://github.com/Humol-e/Graficator")
 def procesar_linea_serial(linea):
     
     try:
