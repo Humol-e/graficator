@@ -12,7 +12,7 @@ Utiliza una frecuencia de 19200 bauds.
 ```bash
  streamlit run graficator.py
 ```
-#### Data string example
+#### Data string Ejemplo
 ```bash
  13:19:03.490 ->  29.57| 49.08| 30.68 | 25.79 |-109.00 |23.30 | 0 | 162 |  -0.35 | 32.52 |17.21 |-4.88 |-28.99 |90.31 |-11.43 |-33.10 |90.79 |-14.94 |959
 ```
